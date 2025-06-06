@@ -1,0 +1,283 @@
+/* Start.css - Versão corrigida */
+
+.start-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* Remove qualquer posicionamento fixed ou absolute que invada a sidebar */
+}
+
+.grid-cell {
+  position: absolute;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(12, 20, 25, 0.1) 50%, rgba(12, 20, 25, 0.3) 100%);
+  pointer-events: none;
+}
+
+.Start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  z-index: 2;
+  max-width: 900px;
+  width: calc(100% - 80px); /* Garante que não ultrapasse os limites */
+  padding: 0 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+}
+
+.Textos {
+  flex: 1;
+  color: var(--white);
+}
+
+.Titulo h1 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin: 0 0 8px 0;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.Titulo h1 span {
+  color: var(--variant-color);
+  font-weight: 600;
+  display: block;
+}
+
+.Text p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  font-weight: 300;
+}
+
+.Perfil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Linguagens {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 3;
+}
+
+.icon-carousel {
+  width: 45px;
+  height: 45px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--variant-color);
+  box-shadow: 0 4px 12px rgba(109, 151, 232, 0.25);
+  transition: all 0.3s ease;
+  animation: iconPulse 3s infinite;
+}
+
+.icon-carousel:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(109, 151, 232, 0.4);
+}
+
+.icon-carousel svg,
+.icon-carousel iconify-icon {
+  font-size: 22px;
+}
+
+@keyframes iconPulse {
+  0%, 100% { 
+    opacity: 1; 
+    box-shadow: 0 4px 12px rgba(109, 151, 232, 0.25);
+  }
+  50% { 
+    opacity: 0.8; 
+    box-shadow: 0 6px 16px rgba(109, 151, 232, 0.4);
+  }
+}
+
+.foto-container {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid var(--variant-color);
+  padding: 6px;
+  background: linear-gradient(135deg, var(--hover-color), rgba(109, 151, 232, 0.3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(109, 151, 232, 0.2);
+}
+
+.Perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .Start {
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  .Titulo h1 {
+    font-size: 2.6rem;
+  }
+  
+  .Text p {
+    font-size: 1.2rem;
+  }
+  
+  .foto-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .icon-carousel {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-carousel svg,
+  .icon-carousel iconify-icon {
+    font-size: 18px;
+  }
+  
+  .Linguagens {
+    gap: 10px;
+  }
+  
+  .Perfil {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Start {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .Perfil {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .Linguagens {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .Titulo h1 {
+    font-size: 2.2rem;
+  }
+  
+  .Text p {
+    font-size: 1.1rem;
+  }
+  
+  .foto-container {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .icon-carousel {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .icon-carousel svg,
+  .icon-carousel iconify-icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Start {
+    padding: 0 15px;
+    gap: 20px;
+    width: calc(100% - 30px);
+  }
+  
+  .Titulo h1 {
+    font-size: 1.8rem;
+  }
+  
+  .Text p {
+    font-size: 1rem;
+  }
+  
+  .foto-container {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .icon-carousel {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-carousel svg,
+  .icon-carousel iconify-icon {
+    font-size: 14px;
+  }
+  
+  .Linguagens {
+    gap: 6px;
+  }
+  
+  .Perfil {
+    gap: 10px;
+  }
+}
+
+/* Animações suaves para transições */
+@media (prefers-reduced-motion: no-preference) {
+  .Start > * {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .Start .Textos {
+    animation-delay: 0.1s;
+  }
+  
+  .Start .Perfil {
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
