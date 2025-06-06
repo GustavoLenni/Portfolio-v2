@@ -60,7 +60,7 @@ const Start = () => {
     }, 2500); // Troca a cada 2.5 segundos
 
     return () => clearInterval(interval);
-  }, []);
+  }, [languageIcons.length]);
 
   return (
     <div className="start-container" id="home">
