@@ -9,7 +9,7 @@ const Projetos = () => {
         {
             id: 1,
             titulo: "API RESTful",
-            descricao: "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            descricao: "API web completa que realiza operações CRUD (criar, ler, atualizar e deletar) de usuários, estruturada com o padrão MVC para organização eficiente da lógica, rotas e modelos. Conta com sistema de autenticação via chave de API implementado por middlewares, garantindo acesso seguro e autorizado.",
             banner: images.bannerapi,
             contribuidores: [
                 { nome: "Você", foto: images.foto }
@@ -22,7 +22,7 @@ const Projetos = () => {
         {
             id: 2,
             titulo: "Rotina.py",
-            descricao: "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            descricao: "Projeto pessoal desenvolvido para aprofundar o conhecimento em Django, criando um sistema funcional para organização de tarefas semanais. Permite definir tarefas associadas a dias específicos da semana, automatizando a gestão das rotinas recorrentes.",
             banner: images.bannerrotinapy,
             contribuidores: [
                 { nome: "Você", foto: images.foto }
@@ -35,7 +35,7 @@ const Projetos = () => {
         {
             id: 3,
             titulo: "Orçamento Amigo",
-            descricao: "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            descricao: "Aplicativo desenvolvido com Node.js e JavaScript para facilitar o controle e a organização de gastos pessoais. Permite monitorar compras, visualizar despesas de forma clara e auxiliar no planejamento financeiro com um design intuitivo e funcionalidades práticas para o usuário.",
             banner: images.bannerorcamento,
             contribuidores: [
                 { nome: "Você", foto: images.foto },
@@ -49,7 +49,7 @@ const Projetos = () => {
         {
             id: 4,
             titulo: "Refeitorio",
-            descricao: "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            descricao: "Desenvolvido em grupo no SENAI para a rede SESI de Ferraz, o projeto Refeitório facilita a comunicação entre nutricionistas e alunos. A plataforma permite consulta ao cardápio semanal e o envio de mensagens, melhorando a interação e podendo ser implementada em unidades SESI em todo o país.",
             banner: images.bannerrefeitorio,
             contribuidores: [
                 { nome: "Você", foto: images.foto },
@@ -66,7 +66,7 @@ const Projetos = () => {
         {
             id: 5,
             titulo: "Projeto de Rede Social",
-            descricao: "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            descricao: "Rede social em desenvolvimento que oferece um espaço para usuários compartilharem suas ideias, encontrarem colaboradores e atrair interessados para apoiar ou adquirir projetos. O objetivo é criar uma comunidade engajada onde a criatividade ganha voz e ações.",
             banner: images.redesocial,
             contribuidores: [
                 { nome: "Você", foto: images.foto },
