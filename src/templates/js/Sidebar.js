@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import images from '../../assets/images';
-import curriculoPdf from '../../assets/curriculo/currículo.pdf'; // Importar o PDF
+import curriculoPdf from '../../assets/curriculo-eu/currículo.pdf'; // Importar o PDF
 import { Icon } from "@iconify/react";
 
 const Sidebar = () => {
@@ -21,7 +21,7 @@ const Sidebar = () => {
                 setIsCollapsed(false); // Reset collapsed state no mobile
             } else {
                 setIsVisible(true);
-                // Manter estado collapsed no desktop
+                // Manter estado collapsed no desktop a
             }
         };
 
