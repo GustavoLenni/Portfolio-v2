@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import images from '../../assets/images';
-import curriculoPdf from '../../assets/curriculo-eu/currículo.pdf'; // Importar o PDF
+import curriculoPdf from '../../assets/curriculo-eu/Curriculo.pdf'; // Importar o PDF
 import { Icon } from "@iconify/react";
 
 const Sidebar = () => {
