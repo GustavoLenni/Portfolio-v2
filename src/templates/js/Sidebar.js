@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import images from '../../assets/images';
+import curriculoPdf from '../../assets/curriculo/currículo.pdf'; // Importar o PDF
 import { Icon } from "@iconify/react";
 
 const Sidebar = () => {
@@ -109,6 +110,16 @@ const Sidebar = () => {
         if (isMobile) {
             setIsVisible(false);
         }
+    };
+
+    // Função para download do currículo
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = curriculoPdf;
+        link.download = 'Curriculo-Gustavo-Lenni.pdf'; // Nome personalizado para o download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     // Fechar sidebar quando clicar no overlay
@@ -258,7 +269,11 @@ const Sidebar = () => {
 
                 {/* Footer */}
                 <footer className="sidebar__footer">
-                    <button className="sidebar__download">
+                    <button 
+                        className="sidebar__download"
+                        onClick={handleDownloadCV}
+                        title="Baixar Currículo"
+                    >
                         <div className="sidebar__item-icon">
                             <Icon icon="lucide:download" size={18} />
                         </div>
