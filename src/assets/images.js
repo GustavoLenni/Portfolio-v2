@@ -1,5 +1,5 @@
 import logo from './images/logo.png';
-import foto from './images/foto.jpeg';
+import foto from './images/foto.png';
 import bannerapi from './images/banner-api.png';
 import bannerorcamento from './images/banner-orcamento.png';
 import bannerrefeitorio from './images/banner-refeitorio.png';
