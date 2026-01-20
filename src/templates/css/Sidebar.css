@@ -633,3 +633,23 @@
   -webkit-user-select: none;
   -moz-user-select: none;
 }
+/* ===== LANGUAGE TOGGLE ===== */
+.sidebar__item--language {
+  background: var(--sidebar-hover);
+  border: 1px solid var(--sidebar-border);
+}
+
+.sidebar__item--language:hover {
+  background: var(--sidebar-active);
+  border-color: var(--accent-color);
+}
+
+.sidebar__language-flag {
+  margin-left: auto;
+  font-size: 16px;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+}
+
+.sidebar--collapsed .sidebar__language-flag {
+  display: none;
+}

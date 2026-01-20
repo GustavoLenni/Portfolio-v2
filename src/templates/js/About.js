@@ -1,6 +1,8 @@
 import React from "react";
+import { useLanguage } from "./LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
   return (
     <section className="about-section" id="about">
       <div className="about-container">
@@ -15,13 +17,13 @@ const About = () => {
                   <span className="control-btn minimize"></span>
                   <span className="control-btn maximize"></span>
                 </div>
-                <div className="window-title">💻developer.php</div>
+                <div className="window-title">💻{t("developerPhp")}</div>
               </div>
               <div className="code-content">
                 <div className="code-line">
                   <span className="line-number">01</span>
                   <span className="code-text">
-                    <span className="comment">Desenvolvedor Backend</span>
+                    <span className="comment">{t("backendDeveloper")}</span>
                   </span>
                 </div>
                 <div className="code-line">
@@ -55,9 +57,10 @@ const About = () => {
                   <span className="line-number">06</span>
                   <span className="code-text">
                     <span className="keyword">echo</span>{" "}
-                    <span className="string">"Olá! Eu sou "</span> . $name .{" "}
-                    <span className="string">", atuo como "</span> . $role .{" "}
-                    <span className="string">" e minhas skills são: "</span> .
+                    <span className="string">"{t("codeGreeting")} "</span> .
+                    $name . <span className="string">", {t("codeRole")} "</span>{" "}
+                    . $role .{" "}
+                    <span className="string">"{t("codeSkills")} "</span> .
                     implode(<span className="string">", "</span>, $skills) .{" "}
                     <span className="string">"."</span>;
                   </span>
@@ -69,43 +72,35 @@ const About = () => {
           {/* About Text Section */}
           <div className="text-section">
             <div className="section-header">
-              <h1 className="section-title">Sobre mim</h1>
+              <h1 className="section-title">{t("aboutTitle")}</h1>
               <div className="title-decoration"></div>
             </div>
 
             <div className="about-description">
-              <p className="intro-text">
-                Desenvolvedor Backend apaixonado por criar soluções robustas e
-                escaláveis. Com experiência em tecnologias modernas, busco
-                sempre entregar código limpo e eficiente.
-              </p>
+              <p className="intro-text">{t("aboutDescription")}</p>
 
               <div className="highlights">
                 <div className="highlight-item">
                   <div className="highlight-icon">⚡</div>
                   <div className="highlight-content">
-                    <h3>Performance</h3>
-                    <p>
-                      Otimização de consultas e sistemas de alta disponibilidade
-                    </p>
+                    <h3>{t("performance")}</h3>
+                    <p>{t("performanceDesc")}</p>
                   </div>
                 </div>
 
                 <div className="highlight-item">
                   <div className="highlight-icon">🔧</div>
                   <div className="highlight-content">
-                    <h3>Tecnologias</h3>
-                    <p>PHP, Javascript, Python e arquiteturas RESTful</p>
+                    <h3>{t("technologiesLabel")}</h3>
+                    <p>{t("technologiesDesc")}</p>
                   </div>
                 </div>
 
                 <div className="highlight-item">
                   <div className="highlight-icon">🎯</div>
                   <div className="highlight-content">
-                    <h3>Foco</h3>
-                    <p>
-                      Desenvolvimento de APIs robustas e integração de sistemas
-                    </p>
+                    <h3>{t("focus")}</h3>
+                    <p>{t("focusDesc")}</p>
                   </div>
                 </div>
               </div>

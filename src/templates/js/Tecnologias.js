@@ -1,7 +1,9 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import { useLanguage } from './LanguageContext';
 
 const Tecnologias = () => {
+    const { t } = useLanguage();
     const tecnologiasData = {
         linguagens: [
             { nome: 'PHP', icone: 'devicon:php', cor: '#777BB4' },
@@ -25,17 +27,17 @@ const Tecnologias = () => {
             <div className="portfolio-tech-header">
                 <div className="portfolio-tech-title">
                     <Icon icon="lucide:code" className="portfolio-tech-icon" />
-                    <h1>Tecnologias</h1>
+                    <h1>{t('technologiesTitle')}</h1>
                 </div>
                 <p className="portfolio-tech-description">
-                    Ferramentas e tecnologias que utilizo para desenvolver soluções eficientes e modernas
-                </p>
+  {t('technologiesSubtitle')}
+</p>
             </div>
 
             <div className="portfolio-tech-grid">
                 <div className="portfolio-tech-card">
                     <div className="portfolio-tech-card-header">
-                        <h2>Linguagens de Programação</h2>
+                        <h2>{t('programmingLanguages')}</h2>
                     </div>
                     <div className="portfolio-tech-list">
                         {tecnologiasData.linguagens.map((tech, index) => (
@@ -55,7 +57,7 @@ const Tecnologias = () => {
 
                 <div className="portfolio-tech-card">
                     <div className="portfolio-tech-card-header">
-                        <h2>Frameworks</h2>
+                        <h2>{t('frameworks')}</h2>
                     </div>
                     <div className="portfolio-tech-list">
                         {tecnologiasData.frameworks.map((tech, index) => (
@@ -75,7 +77,7 @@ const Tecnologias = () => {
 
                 <div className="portfolio-tech-card">
                     <div className="portfolio-tech-card-header">
-                        <h2>Databases</h2>
+                        <h2>{t('databases')}</h2>
                     </div>
                     <div className="portfolio-tech-list">
                         {tecnologiasData.databases.map((tech, index) => (

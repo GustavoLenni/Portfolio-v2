@@ -11,19 +11,22 @@ import About from './templates/js/About';
 import Projetos from './templates/js/Projetos';
 import Tecnologias from './templates/js/Tecnologias';
 import Footer from './templates/js/Footer';
+import { LanguageProvider } from './templates/js/LanguageContext'; 
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <main className='main-content'>
-        <Start />
-        <About />
-        <Projetos />
-        <Tecnologias />
-        <Footer />
-      </main>
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Sidebar />
+        <main className='main-content'>
+          <Start />
+          <About />
+          <Projetos />
+          <Tecnologias />
+          <Footer />
+        </main>
+      </div>
+    </LanguageProvider> 
   );
 }
 
