@@ -17,7 +17,7 @@ export const translations = {
     
     // About Section
     aboutTitle: 'About Me',
-    aboutDescription: 'Backend Developer passionate about creating robust and scalable solutions. With experience in modern technologies, I always seek to deliver clean and efficient code.',
+    aboutDescription: 'Software Engineer passionate about creating robust and scalable solutions. With experience in modern technologies, I always seek to deliver clean and efficient code.',
     performance: 'Performance',
     performanceDesc: 'Query optimization and high availability systems',
     technologiesLabel: 'Technologies',
@@ -25,7 +25,7 @@ export const translations = {
     focus: 'Focus',
     focusDesc: 'Development of robust APIs and system integration',
     developerPhp: 'developer.php',
-    backendDeveloper: 'Backend Developer',
+    backendDeveloper: 'Software Engineer',
     codeGreeting: 'Hello! I am',
     codeRole: 'I work as',
     codeSkills: 'and my skills are:',
@@ -90,7 +90,7 @@ export const translations = {
     
     // About Section
     aboutTitle: 'Sobre mim',
-    aboutDescription: 'Desenvolvedor Backend apaixonado por criar soluções robustas e escaláveis. Com experiência em tecnologias modernas, busco sempre entregar código limpo e eficiente.',
+    aboutDescription: 'Engenheiro de Software apaixonado por criar soluções robustas e escaláveis. Com experiência em tecnologias modernas, busco sempre entregar código limpo e eficiente.',
     performance: 'Performance',
     performanceDesc: 'Otimização de consultas e sistemas de alta disponibilidade',
     technologiesLabel: 'Tecnologias',
@@ -98,7 +98,7 @@ export const translations = {
     focus: 'Foco',
     focusDesc: 'Desenvolvimento de APIs robustas e integração de sistemas',
     developerPhp: 'developer.php',
-    backendDeveloper: 'Desenvolvedor Backend',
+    backendDeveloper: 'Engenheiro de Software',
     codeGreeting: 'Olá! Eu sou',
     codeRole: 'atuo como',
     codeSkills: 'e minhas skills são:',
