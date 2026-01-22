@@ -7,18 +7,15 @@ const Tecnologias = () => {
     const tecnologiasData = {
         linguagens: [
             { nome: 'PHP', icone: 'devicon:php', cor: '#777BB4' },
-            { nome: 'JavaScript', icone: 'devicon:javascript', cor: '#F7DF1E' },
-            { nome: 'Python', icone: 'devicon:python', cor: '#3776AB' }
+            { nome: 'Java', icone: 'devicon:java', cor: '#FF2D20' }
         ],
         frameworks: [
             { nome: 'Laravel', icone: 'devicon:laravel', cor: '#FF2D20' },
-            { nome: 'Node.js', icone: 'devicon:nodejs', cor: '#339933' },
-            { nome: 'Django', icone: 'skill-icons:django', cor: '#092E20' }
         ],
         databases: [
+            { nome: 'Docker', icone: 'skill-icons:docker', cor: '#4479A1' },
             { nome: 'MySQL', icone: 'devicon:mysql', cor: '#4479A1' },
-            { nome: 'Supabase', icone: 'devicon:supabase', cor: '#3ECF8E' },
-            { nome: 'SQLite', icone: 'devicon:sqlite', cor: '#003B57' }
+            { nome: 'Supabase', icone: 'devicon:supabase', cor: '#3ECF8E' }  
         ]
     };
 

@@ -45,8 +45,7 @@ const About = () => {
                   <span className="code-text">
                     <span className="keyword">$skills</span> = [
                     <span className="string">"PHP"</span>,{" "}
-                    <span className="string">"JavaScript"</span>,{" "}
-                    <span className="string">"Python"</span>];
+                    <span className="string">"Java"</span>]
                   </span>
                 </div>
                 <div className="code-line">

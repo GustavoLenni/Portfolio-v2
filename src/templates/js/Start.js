@@ -9,8 +9,9 @@ const Start = () => {
   // Ícones das linguagens
   const languageIcons = [
     { icon: 'logos:php', name: 'PHP' },
-    { icon: 'logos:javascript', name: 'JavaScript' },
-    { icon: 'logos:python', name: 'Python' }
+    { icon: 'logos:java', name: 'JavaScript' },
+    { icon: 'logos:laravel', name: 'Laravel' },
+    { icon: 'logos:docker', name: 'Docker' }
   ];
 
   // Criar grid com algumas células incompletas/faltando

@@ -21,7 +21,7 @@ export const translations = {
     performance: 'Performance',
     performanceDesc: 'Query optimization and high availability systems',
     technologiesLabel: 'Technologies',
-    technologiesDesc: 'PHP, Javascript, Python and RESTful architectures',
+    technologiesDesc: 'PHP, Java and RESTful architectures',
     focus: 'Focus',
     focusDesc: 'Development of robust APIs and system integration',
     developerPhp: 'developer.php',
@@ -51,15 +51,15 @@ export const translations = {
     project2Desc: 'Personal project developed to deepen knowledge in Django, creating a functional system for organizing weekly tasks. Allows defining tasks associated with specific days of the week, automating the management of recurring routines.',
     
     // Project 3
-    project3Title: 'Budget Buddy',
+    project3Title: 'Orçamento Amigo',
     project3Desc: 'Application developed with Node.js and JavaScript to facilitate the control and organization of personal expenses. Allows monitoring purchases, viewing expenses clearly and assisting in financial planning with an intuitive design and practical features for the user.',
     
     // Project 4
-    project4Title: 'Cafeteria',
+    project4Title: 'Refeitorio',
     project4Desc: 'Developed in a group at SENAI for the SESI network in Ferraz, the Cafeteria project facilitates communication between nutritionists and students. The platform allows consultation of the weekly menu and sending messages, improving interaction and can be implemented in SESI units throughout the country.',
     
     // Project 5
-    project5Title: 'Social Network Project',
+    project5Title: 'Ideiafy',
     project5Desc: 'Social network in development that offers a space for users to share their ideas, find collaborators and attract interested parties to support or acquire projects. The goal is to create an engaged community where creativity gains voice and action.',
     
     // Technologies Section
@@ -94,7 +94,7 @@ export const translations = {
     performance: 'Performance',
     performanceDesc: 'Otimização de consultas e sistemas de alta disponibilidade',
     technologiesLabel: 'Tecnologias',
-    technologiesDesc: 'PHP, Javascript, Python e arquiteturas RESTful',
+    technologiesDesc: 'PHP, Java e arquiteturas RESTful',
     focus: 'Foco',
     focusDesc: 'Desenvolvimento de APIs robustas e integração de sistemas',
     developerPhp: 'developer.php',
