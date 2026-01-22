@@ -101,7 +101,7 @@ const Start = () => {
             </h1>
           </div>
           <div className="Text">
-            <p>Back-End Developer</p>
+            <p>Software Engineer</p>
           </div>
         </div>
 
