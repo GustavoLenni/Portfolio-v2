@@ -37,7 +37,7 @@ const About = () => {
                   <span className="line-number">03</span>
                   <span className="code-text">
                     <span className="keyword">$role</span> ={" "}
-                    <span className="string">"Backend Developer"</span>;
+                    <span className="string">"Software Engineer"</span>;
                   </span>
                 </div>
                 <div className="code-line">
