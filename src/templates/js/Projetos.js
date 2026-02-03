@@ -44,7 +44,7 @@ const Projetos = () => {
       githubUrl: "https://github.com/GustavoLenni/Orcamento",
       deployUrl:
         "https://www.mediafire.com/file/ekzt02njqh4820v/orcamento-app.apk/file",
-      status: "complete",
+      status:"complete",
     },
     {
       id: 4,
@@ -125,12 +125,16 @@ const Projetos = () => {
                 <div className="banner-overlay">
                   <div className="projeto-status">
                     <span
-                      className={`status-badge ${projeto.status === "Completo" ? "status-complete" : "status-development"}`}
-                    >
-                      {projeto.status === "Completo"
-                        ? t("complete")
-                        : t("inDevelopment")}
-                    </span>
+  className={`status-badge ${
+    projeto.status === "complete"
+      ? "status-complete"
+      : "status-development"
+  }`}
+>
+  {t(projeto.status)}
+</span>
+
+
                   </div>
                 </div>
               </div>
