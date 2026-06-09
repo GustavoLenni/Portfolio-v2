@@ -8,74 +8,42 @@ const Projetos = () => {
   const { t } = useLanguage();
 
   const projetos = [
-    {
+      {
       id: 1,
-      titulo: t("project1Title"),
-      descricao: t("project1Desc"),
-      banner: images.bannerapi,
-      contribuidores: [{ nome: "Você", foto: images.foto }],
-      tecnologias: ["Javascript", "Node.js", "Express"],
-      githubUrl: "https://github.com/GustavoLenni/WebAPI",
+      titulo: t("project2Title"),
+      descricao: t("project2Desc"),
+      banner: images.graphql,
+      contribuidores: [
+        { nome: "Você", foto: images.foto },
+      ],
+      tecnologias: ["GraphQL","Java","Spring boot","Docker","PostgreSQL"],
+      githubUrl: "https://github.com/GustavoLenni/Graphiql",
       deployUrl:
-        "https://www.linkedin.com/posts/gustavolenni_api-backend-dev-activity-7334255933591539712-wKPF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE42sNcBE867rzuYuoT7mtNAqxx_W-kBpCA",
-      status: "complete",
+        "#",
+      status:"complete",
     },
     {
       id: 2,
-      titulo: t("project2Title"),
-      descricao: t("project2Desc"),
-      banner: images.bannerrotinapy,
+      titulo: t("project1Title"),
+      descricao: t("project1Desc"),
+      banner: images.finance,
       contribuidores: [{ nome: "Você", foto: images.foto }],
-      tecnologias: ["Python", "Django", "PostgreSQL"],
-      githubUrl: "https://github.com/GustavoLenni/Rotinapy",
-      deployUrl: "https://rotinapy.onrender.com/",
+      tecnologias: ["Java","Spring Boot","Docker","PostgreSQL","Rest"],
+      githubUrl: "https://github.com/GustavoLenni/Finances",
+      deployUrl:
+        "#",
       status: "complete",
     },
     {
       id: 3,
-      titulo: t("project3Title"),
-      descricao: t("project3Desc"),
-      banner: images.bannerorcamento,
-      contribuidores: [
-        { nome: "Você", foto: images.foto },
-        { nome: "Felipe Luz", foto: images.felipeluz },
-      ],
-      tecnologias: ["JavaScript", "React Native"],
-      githubUrl: "https://github.com/GustavoLenni/Orcamento",
-      deployUrl:
-        "https://www.mediafire.com/file/ekzt02njqh4820v/orcamento-app.apk/file",
-      status:"complete",
-    },
-    {
-      id: 4,
-      titulo: t("project4Title"),
-      descricao: t("project4Desc"),
-      banner: images.bannerrefeitorio,
-      contribuidores: [
-        { nome: "Você", foto: images.foto },
-        { nome: "Felipe Luz", foto: images.felipeluz },
-        { nome: "Andrey Hiago", foto: images.andrey },
-        { nome: "João Gimenez", foto: images.joao },
-        { nome: "Heitor Aredes", foto: images.heitor },
-      ],
-      tecnologias: ["Javascript", "React Native", "Supabase", "Figma"],
-      githubUrl: "https://github.com/joaopbg06/semestral",
-      deployUrl: "#",
-      status: "complete",
-    },
-    {
-      id: 5,
       titulo: t("project5Title"),
       descricao: t("project5Desc"),
       banner: images.redesocial,
       contribuidores: [
         { nome: "Você", foto: images.foto },
-        { nome: "Felipe Luz", foto: images.felipeluz },
         { nome: "Murilo", foto: images.murilo },
-        { nome: "João Gimenez", foto: images.joao },
-        { nome: "Matheus Lucindo", foto: images.mateus },
       ],
-      tecnologias: ["PHP", "React", "MySQL", "Figma"],
+      tecnologias: ["Java","Spring boot","Docker","PostgreSQL","Graphql","Figma","React"],
       githubUrl: "#",
       deployUrl: "#",
       status: "inDevelopment",
@@ -216,6 +184,7 @@ const Projetos = () => {
         </div>
 
         {/* Botão Ver Mais / Ver Menos */}
+        {projetos.length > 4 && (
         <div className="ver-mais-container">
           {!mostrarTodos ? (
             <button
@@ -256,6 +225,7 @@ const Projetos = () => {
             </button>
           )}
         </div>
+        )}
       </div>
     </div>
   );

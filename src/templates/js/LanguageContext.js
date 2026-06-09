@@ -21,10 +21,10 @@ export const translations = {
     performance: 'Performance',
     performanceDesc: 'Query optimization and high availability systems',
     technologiesLabel: 'Technologies',
-    technologiesDesc: 'PHP, Java and RESTful architectures',
+    technologiesDesc: 'Java',
     focus: 'Focus',
     focusDesc: 'Development of robust APIs and system integration',
-    developerPhp: 'developer.php',
+    developerJava: 'developer.java',
     backendDeveloper: 'Software Engineer',
     codeGreeting: 'Hello! I am',
     codeRole: 'I work as',
@@ -43,12 +43,12 @@ export const translations = {
     loading: 'Loading...',
     
     // Project 1
-    project1Title: 'RESTful API',
-    project1Desc: 'Complete web API that performs CRUD operations (create, read, update and delete) of users, structured with the MVC pattern for efficient organization of logic, routes and models. Features API key authentication system implemented through middlewares, ensuring secure and authorized access.',
+    project1Title: 'Finance Project',
+    project1Desc: 'A financial management application that allows users to track income and expenses, monitor spending, and view their profits in a simple way. The system uses JWT authentication to secure user data and was built with Java, Spring Boot, and Docker with PostgreSQL, following a REST API architecture.',
     
     // Project 2
-    project2Title: 'Rotina.py',
-    project2Desc: 'Personal project developed to deepen knowledge in Django, creating a functional system for organizing weekly tasks. Allows defining tasks associated with specific days of the week, automating the management of recurring routines.',
+    project2Title: 'Graphiql Project',
+    project2Desc: 'A study project created to explore and practice GraphQL development with Java and Spring Boot. The application implements a relationship between users and posts, where each user can own multiple posts, applying entity relationship concepts and flexible data querying through GraphQL. The project follows a layered architecture (Controller, Service, Repository, and Model), focusing on clean code, reusability, and maintainability. It also uses Docker with PostgreSQL as the database solution.',
     
     // Project 3
     project3Title: 'Orçamento Amigo',
@@ -94,10 +94,10 @@ export const translations = {
     performance: 'Performance',
     performanceDesc: 'Otimização de consultas e sistemas de alta disponibilidade',
     technologiesLabel: 'Tecnologias',
-    technologiesDesc: 'PHP, Java e arquiteturas RESTful',
+    technologiesDesc: 'Java',
     focus: 'Foco',
     focusDesc: 'Desenvolvimento de APIs robustas e integração de sistemas',
-    developerPhp: 'developer.php',
+    developerJava: 'developer.java',
     backendDeveloper: 'Engenheiro de Software',
     codeGreeting: 'Olá! Eu sou',
     codeRole: 'atuo como',
@@ -116,12 +116,12 @@ export const translations = {
     loading: 'Carregando...',
     
     // Project 1
-    project1Title: 'API RESTful',
-    project1Desc: 'API web completa que realiza operações CRUD (criar, ler, atualizar e deletar) de usuários, estruturada com o padrão MVC para organização eficiente da lógica, rotas e modelos. Conta com sistema de autenticação via chave de API implementado por middlewares, garantindo acesso seguro e autorizado.',
+    project1Title: 'Projeto Finance',
+    project1Desc: 'Aplicação de controle financeiro que permite aos usuários registrar entradas e saídas, acompanhar despesas e visualizar seus lucros de forma simples. O sistema conta com autenticação JWT para proteger os dados de cada usuário e foi desenvolvido com Java, Spring Boot e Docker com PostgreSQL, seguindo o padrão de API REST.',
     
     // Project 2
-    project2Title: 'Rotina.py',
-    project2Desc: 'Projeto pessoal desenvolvido para aprofundar o conhecimento em Django, criando um sistema funcional para organização de tarefas semanais. Permite definir tarefas associadas a dias específicos da semana, automatizando a gestão das rotinas recorrentes.',
+    project2Title: 'Graphiql Project',
+    project2Desc: 'Projeto desenvolvido para estudar e praticar o uso de GraphQL com Java e Spring Boot. A aplicação implementa uma relação entre usuários e posts, onde cada usuário pode possuir vários posts, aplicando conceitos de relacionamentos entre entidades e consultas mais flexíveis com GraphQL. O projeto foi estruturado utilizando arquitetura em camadas (Controller, Service, Repository e Model), com foco em organização, reutilização de código e boas práticas de desenvolvimento. Além disso, utiliza Docker com PostgreSQL para o banco de dados.',
     
     // Project 3
     project3Title: 'Orçamento Amigo',

@@ -6,16 +6,15 @@ const Tecnologias = () => {
     const { t } = useLanguage();
     const tecnologiasData = {
         linguagens: [
-            { nome: 'PHP', icone: 'devicon:php', cor: '#777BB4' },
             { nome: 'Java', icone: 'devicon:java', cor: '#FF2D20' }
         ],
         frameworks: [
-            { nome: 'Laravel', icone: 'devicon:laravel', cor: '#FF2D20' },
+            { nome: 'Spring Boot', icone: 'devicon:spring', cor: '#27862f' },
         ],
         databases: [
             { nome: 'Docker', icone: 'skill-icons:docker', cor: '#4479A1' },
-            { nome: 'MySQL', icone: 'devicon:mysql', cor: '#4479A1' },
-            { nome: 'Supabase', icone: 'devicon:supabase', cor: '#3ECF8E' }  
+            { nome: 'PostgreSQL', icone: 'devicon:postgresql', cor: '#4479A1' },
+            { nome: 'Redis', icone: 'devicon:redis', cor: '#fc3a3a' },
         ]
     };
 

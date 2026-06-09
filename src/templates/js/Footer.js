@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import images from "../../assets/images";
 import { useLanguage } from "./LanguageContext";
 
 const Footer = () => {
@@ -42,11 +41,6 @@ const Footer = () => {
         <div className="portfolio-footer-main">
           <div className="portfolio-footer-brand">
             <div className="portfolio-footer-logo">
-              <img
-                className="portfolio-footer-logo-icon"
-                src={images.logo}
-                alt="logo"
-              ></img>
               <h3>Gustavo Lenni</h3>
             </div>
             <p className="portfolio-footer-description">

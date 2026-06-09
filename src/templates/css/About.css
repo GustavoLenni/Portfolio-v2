@@ -39,10 +39,10 @@
 }
 
 .code-window {
-  background: rgba(26, 31, 37, 0.95);
+  background: #2b2b2b;
+  border: 1px solid #3c3f41;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(109, 151, 232, 0.2);
   box-shadow: 
     0 20px 40px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -99,15 +99,14 @@
 }
 
 .window-title {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 500;
-  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-weight: 600;
 }
 
 .code-content {
   padding: 24px;
-  background: rgba(30, 30, 30, 0.9);
+  background: #2b2b2b;
   font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', monospace;
   font-size: 14px;
   line-height: 1.6;
@@ -136,24 +135,21 @@
   flex: 1;
 }
 
-/* PHP Syntax highlighting */
 .keyword {
-  color: #ff7b72;
+  color: #cc7832;
   font-weight: 600;
 }
 
 .class {
-  color: #ffa657;
-  font-weight: 600;
+  color: #ffc66d;
 }
 
 .function {
-  color: #d2a8ff;
-  font-weight: 500;
+  color: #ffc66d;
 }
 
 .variable {
-  color: #79c0ff;
+  color: #9876aa;
 }
 
 .property {
@@ -161,7 +157,7 @@
 }
 
 .string {
-  color: #a5d6ff;
+  color: #6a8759;
 }
 
 .comment {
